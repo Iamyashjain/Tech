@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import { NavLink, Redirect } from 'react-router-dom';
+import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    email: ''
+    email: "",
   });
   const [loggedIn, setLoggedIn] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -18,34 +19,30 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8080/otp/step1', {
-        method: 'POST',
+      const response = await fetch("http://localhost:8080/otp/step1", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         // Handle successful response
         const data = await response.text();
-        console.log('Response:', data);
-        // Set loggedIn state to true
+        console.log("Response:", data);
         setLoggedIn(true);
+        navigate("/Login/Otp");
       } else {
         // Handle error response
-        console.error('Login failed');
+        console.error("Login failed");
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
     }
   };
 
-  if (loggedIn) {
-    return <Redirect to="/login/Otp" />;
-  }
-
-  return (
+    return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">

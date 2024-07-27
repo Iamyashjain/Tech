@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Mar 26 17:18:58 IST 2024
+icu4j-61.1-sources.jar>central=
+icu4j-61.1-javadoc.jar>central=
+icu4j-61.1.jar>central=
+icu4j-61.1.pom>central=

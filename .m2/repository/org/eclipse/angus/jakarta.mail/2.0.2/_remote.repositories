@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 14 19:04:59 IST 2023
+jakarta.mail-2.0.2.jar>central=
+jakarta.mail-2.0.2-sources.jar>central=
+jakarta.mail-2.0.2-javadoc.jar>central=
+jakarta.mail-2.0.2.pom>central=

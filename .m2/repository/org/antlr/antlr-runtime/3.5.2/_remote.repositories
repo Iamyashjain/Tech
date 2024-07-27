@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Mar 26 17:18:56 IST 2024
+antlr-runtime-3.5.2-javadoc.jar>central=
+antlr-runtime-3.5.2.jar>central=
+antlr-runtime-3.5.2-sources.jar>central=
+antlr-runtime-3.5.2.pom>central=

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Mar 26 17:18:53 IST 2024
+byte-buddy-1.11.8.jar>central=
+byte-buddy-1.11.8-sources.jar>central=
+byte-buddy-1.11.8-javadoc.jar>central=
+byte-buddy-1.11.8.pom>central=
